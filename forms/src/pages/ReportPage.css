@@ -1,0 +1,152 @@
+/* ReportPage.css */
+
+/* Container */
+.report-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.report-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Action buttons */
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.export-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+  background-color: #45a049;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action buttons inside table */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #1976d2;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Submit All button at bottom */
+.submit-all-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-all-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.submit-all-btn:hover {
+  background-color: #fb8c00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .export-btn {
+    margin-bottom: 10px;
+  }
+
+  table th,
+  table td {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+  .submit-all-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
